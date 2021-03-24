@@ -1,0 +1,10 @@
+{
+	"id": "VisibleFactions",
+	"loadorder": 1,
+	"title": "{{G|Visible}} {{R|Factions}}{{y|!}}",
+	"description": "Make factions visible on the look screen!",
+	"tags": "UI, Script",
+	"version": "1.0",
+	"author": "{{p|Fyrefly}}",
+	"previewImage": "Logo.png"
+}
