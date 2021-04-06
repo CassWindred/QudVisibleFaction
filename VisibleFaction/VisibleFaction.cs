@@ -44,7 +44,7 @@ namespace XRL.World.Parts
                 && (faction = Factions.get(factionName)) != null
                 && faction.Visible)
                 {
-                    E.AddClause($"({GetFactionString(faction)})");
+                    E.AddTag($"({GetFactionString(faction)})");
                 }
                 if (ParentObject.IsOwned()
                 && (factionName = ParentObject.Owner) != null
@@ -52,7 +52,7 @@ namespace XRL.World.Parts
                 && faction.Visible)
                 {
                     //MessageQueue.AddPlayerMessage("Getting Owner baybee");
-                    E.AddClause($"[{GetFactionString(faction)}]");
+                    E.AddTag($"[{GetFactionString(faction)}]");
                 }
             } catch (Exception ex){
                 Debug.LogError("Failed to add Faction info to display name with exception: \n " + ex);
